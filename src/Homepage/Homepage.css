@@ -1,0 +1,14 @@
+.imgdiv{
+    width:550px;
+    margin:100px auto;
+}
+.img{
+    width:550px;
+    border-radius: 7px;
+}
+.caption{
+    text-align:center;
+    color:#02324f;
+    font-size: large;
+    font-weight: bold;
+}

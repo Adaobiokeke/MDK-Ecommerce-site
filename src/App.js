@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import Homepage from './Homepage/Homepage'
+import  { 
+  BrowserRouter as Router,  Route,} from 'react-router-dom'
+import Login from './Login/Login';
+import DivContainers from './ModalContainers/DivContainers';
+import Shoes from './Shoes/Shoes';
+import Bags from './Bags/Bags';
+import Jewelries from './Jewelries/Jewelries';
+import Carousel from './Carousel/Carouselimages';
 
-function App() {
+
+
+
+  function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+    <div className='App'>
+    <Route exact path='/'component={Homepage}/>
+    <Route path='/login'component={Login}/>
+    <Route path='/divcontainers'component={DivContainers}/>
+    <Route path='/shoes'component={Shoes}/>
+    <Route path='/bags'component={Bags}/>
+    <Route path='/jewelries'component={Jewelries}/>
+    <Route path='/carousel'component={Carousel}/>
+ 
+ </div>
+    </Router>
   );
 }
 

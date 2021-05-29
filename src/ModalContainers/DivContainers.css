@@ -1,0 +1,68 @@
+.containers{
+   background-color: #02324f;
+    border:1px solid green;
+    height:160px;
+    width:250px;
+    margin:20px auto;
+    border-radius:10px;
+    padding:20px 20px;
+    
+}
+.divbutton{
+    height:44px;
+    margin: 27px;
+    width:150px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:1px solid white;
+    background-color: rgb(97, 114, 114);
+    color:#02324f;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modalbtn{
+    height:44px;
+    width:150px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:1px solid white;
+    color:white;
+    font-weight: bold;
+    background-color: #02324f;
+    padding:auto;
+    
+}
+.navigation{
+    text-decoration: none;
+    color: #02324f;
+    font-weight: bold;
+}
+.icon{
+    position: relative;
+    top:16px;
+}
+.whatsapp_float{
+    /* position: fixed; */
+    width: 43px;
+    height: 42px;
+    /* bottom: 40px; */
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+.whatsapp-icon{
+    margin-top:14px;
+}
+.contact{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border:1px solid red; */
+    /* white-space: nowrap; */
+    width:37%
+}
+
