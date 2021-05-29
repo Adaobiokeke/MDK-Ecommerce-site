@@ -23,14 +23,14 @@ const DivContainers = () => {
                      overlay:{
                          backgroundColor:'grey',
                          padding:50,
-                         width:'70%',
-                         height:'70%',
-                          margin:'auto'
+                         
                      },
                      content:{
                          color:'black',
                          alignItems: "center",
-                        
+                         width:'70%',
+                         height:'70%',
+                          margin:'auto'
                      }
                  }}
                  >
