@@ -37,7 +37,6 @@ const useStyles = makeStyles((theme) => ({
 
   title: {
     flexGrow: 1,
-    [theme.breakpoints.down('xs')]:{},
     '& .span':{
       textDecoration:'none',color:'#02324f', fontFamily:'cursive',
       [theme.breakpoints.down('xs')]:{

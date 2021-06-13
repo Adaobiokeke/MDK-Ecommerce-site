@@ -23,14 +23,14 @@ const DivContainers = () => {
                      overlay:{
                          backgroundColor:'grey',
                          padding:50,
-                         
+                         width:'70%',
+                         height:'70%',
+                          margin:'auto'
                      },
                      content:{
                          color:'black',
                          alignItems: "center",
-                         width:'70%',
-                         height:'70%',
-                          margin:'auto'
+                        
                      }
                  }}
                  >
@@ -39,8 +39,10 @@ const DivContainers = () => {
                     <h5 >Price:<b>{content.Price}</b></h5>
                     <h5>Size:{content.size}</h5>
                     <h5 >Description: {content.content}</h5>
+                    <p> Please click on <em><q>place order</q></em> below to finalize order.</p>
+                    <a href='https://form.jotform.com/211635642347051' target="_blank">Place Order</a>
                     <div className="contact"> 
-                    <p> For further engagements, please click on the Whatsapp Icon ---</p>
+                    <p>To chat with an agent, plase click on the Whatsapp Icon</p>
                         <a href='https://wa.me/2347039013505'className='whatsapp_float' rel="noreferrer"target='_blank'><i class='fa fa-whatsapp whatsapp-icon'></i></a>
                     </div>
                     <div className='modalbtn1'>

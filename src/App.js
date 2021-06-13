@@ -7,6 +7,7 @@ import Shoes from './Shoes/Shoes';
 import Bags from './Bags/Bags';
 import Jewelries from './Jewelries/Jewelries';
 import Carousel from './Carousel/Carouselimages';
+import Product from './Product/Productpg'
 
 
 
@@ -22,6 +23,7 @@ import Carousel from './Carousel/Carouselimages';
     <Route path='/bags'component={Bags}/>
     <Route path='/jewelries'component={Jewelries}/>
     <Route path='/carousel'component={Carousel}/>
+    <Route path='/product'component={Product}/>
  
  </div>
     </Router>
