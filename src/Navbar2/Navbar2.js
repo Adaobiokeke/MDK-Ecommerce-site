@@ -44,6 +44,24 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  // title: {
+  //   flexGrow: 1,
+  //   '& .prod':{
+  //     textDecoration:'none',color:'#02324f', fontFamily:'cursive',
+  //     [theme.breakpoints.down('xs')]:{
+  //         whiteSpace: 'nowrap',
+  //     },
+  //   },
+  // },
+  // title: {
+  //   flexGrow: 1,
+  //   '& .span2':{
+  //     textDecoration:'none',color:'#02324f', fontFamily:'cursive',
+  //     [theme.breakpoints.down('xs')]:{
+  //         display:'none',
+  //     },
+  //   },
+  // },
   NavLink:{
     textDecoration:'none',
   },
@@ -62,7 +80,9 @@ export default function ButtonAppBar() {
         <Toolbar>
           <h4 className={classes.title}>
             <NavLink style={{textDecoration:'none',color:'#02324f', fontFamily:'cursive'}}to='/'>
+            <span className='span2'>
                 MDK Palace
+                </span>
             </NavLink>
           </h4>
           <p className={classes.title}>
@@ -70,9 +90,9 @@ export default function ButtonAppBar() {
                 ...simplicity with class!
             </span>
           </p>
-          <h5 className={classes.title}>
+          <h5 className={classes.title .prod}>
             <NavLink style={{textDecoration:'none',color:'#02324f', fontFamily:'cursive'}}to='./divcontainers'>
-                All Products
+                All <span style={{color:'white'}}>dddd</span>
             </NavLink>
           </h5>
           <h5 className={classes.title}>
@@ -88,6 +108,11 @@ export default function ButtonAppBar() {
           <h5 className={classes.title}>
             <NavLink style={{textDecoration:'none',color:'#02324f', fontFamily:'cursive'}}to='./jewelries'>
                 Jewelries
+            </NavLink>
+          </h5>
+          <h5 className={classes.title}>
+            <NavLink style={{textDecoration:'none',color:'#02324f', fontFamily:'cursive'}}to='./nails'>
+                Nails
             </NavLink>
           </h5>
         </Toolbar>

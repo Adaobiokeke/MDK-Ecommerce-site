@@ -22,8 +22,16 @@ import newbag13  from "../Assets/newbag13.jpeg"
 import newbag14  from "../Assets/newbag14.jpeg"
 import newbag15  from "../Assets/newbag15.jpeg"
 import newbag16  from "../Assets/newbag16.jpeg"
+import newbag17  from "../Assets/newbag17.jpeg"
+
 
 export const Bgdatas = [
+    {
+        title:'Details ',
+        image:newbag17,
+        Price:'20,000.00',
+        content:'Layki black leather handbag',
+    },
     {
         title:'Details ',
         image:newbag13,

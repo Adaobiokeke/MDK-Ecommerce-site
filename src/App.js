@@ -7,7 +7,8 @@ import Shoes from './Shoes/Shoes';
 import Bags from './Bags/Bags';
 import Jewelries from './Jewelries/Jewelries';
 import Carousel from './Carousel/Carouselimages';
-import Product from './Product/Productpg'
+import Product from './Product/Productpg';
+import Nails from './Nails/nails';
 
 
 
@@ -23,6 +24,7 @@ import Product from './Product/Productpg'
     <Route path='/bags'component={Bags}/>
     <Route path='/jewelries'component={Jewelries}/>
     <Route path='/carousel'component={Carousel}/>
+    <Route path='/nails'component={Nails}/>
     <Route path='/product'component={Product}/>
  
  </div>

@@ -1,14 +1,11 @@
-import React, {useState}from 'react'
-import {Divdatas} from './DicContainerdata'
-import './DivContainers.css';
+import React, {useState} from 'react'
+import Container2 from '../Components/Container2';
 import Grid from '@material-ui/core/Grid'
 import Modal from 'react-modal'
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { NavLink } from "react-router-dom";
-import  Container2 from '../Components/Container2';
+import {nailsdata} from './nailsdata'
 
-Modal.setAppElement('#root')
-const DivContainers = () => {
+
+const Nails = () => {
     const [modalIsOpen, setModalIsOpen] = useState(false),
     [content, setContent] = useState({});
     const handleOpen = (item) => {
@@ -16,8 +13,8 @@ const DivContainers = () => {
         setModalIsOpen(true)
     }
     return (
-        <Container2 >
-            <Modal isOpen={modalIsOpen}
+        <Container2>
+             <Modal isOpen={modalIsOpen}
                  ShouldCloseOnOverlayClick={false}
                  style={{
                      overlay:{
@@ -34,11 +31,10 @@ const DivContainers = () => {
                      }
                  }}
                  >
-                    <h2 style={{textAlign:'center'}}>Description</h2>
+                      <h2 style={{textAlign:'center'}}>Description</h2>
                     <img src={content.image}alt ='modimg' style={{width:'30%', marginLeft:'37%', border:'10px solid #02324f',borderRadius:7}}/>
                     <h5 >Price:<b>{content.Price}</b></h5>
-                    <h5>Size:{content.size}</h5>
-                    <h5 >Description: {content.content}</h5>
+                    <h5 >Description:{content.content}</h5>
                     <p> Please click on <em><q>place order</q></em> below to finalize order.</p>
                     <a href='https://form.jotform.com/211635642347051' target="_blank">Place Order</a>
                     <div className="contact"> 
@@ -48,9 +44,9 @@ const DivContainers = () => {
                     <div className='modalbtn1'>
                     <button onClick={() => setModalIsOpen(false)} className='modalbtn'>Close</button>
                     </div>
-                 </Modal>
-            <Grid container spacing={5} className="gridcont">
-            {Divdatas && Divdatas.map((box,index) =>
+                     </Modal>
+                     <Grid container spacing={5} className="gridcont">
+            {nailsdata && nailsdata.map((box,index) =>
             <Grid item xs={12} sm={6} md={3}>
             <div className="containers">
                 <img src={box.image} alt='images' style={{width:250, height:170}}/>
@@ -61,6 +57,7 @@ const DivContainers = () => {
             </Grid>
         </Container2>
     )
+    
 }
 
-export default DivContainers
+export default Nails
