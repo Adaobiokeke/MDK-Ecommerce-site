@@ -42,7 +42,7 @@ const DivContainers = () => {
                     <p> Please click on <em><q>place order</q></em> below to finalize order.</p>
                     <a href='https://form.jotform.com/211635642347051' target="_blank">Place Order</a>
                     <div className="contact"> 
-                    <p>To chat with an agent, plase click on the Whatsapp Icon</p>
+                    <p>To chat with an agent, please click on the Whatsapp Icon</p>
                         <a href='https://wa.me/2347039013505'className='whatsapp_float' rel="noreferrer"target='_blank'><i class='fa fa-whatsapp whatsapp-icon'></i></a>
                     </div>
                     <div className='modalbtn1'>
